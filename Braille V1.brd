@@ -205,6 +205,8 @@
 <text x="90.805" y="62.23" size="2.54" layer="25" rot="R270">BRAILLE CELL EVALUATION BOAD</text>
 <text x="9.525" y="66.04" size="1.016" layer="25">Jump to power from Arduino</text>
 <text x="96.52" y="50.8" size="1.778" layer="25" rot="R90">@vjvarada</text>
+<text x="32.385" y="88.265" size="1.778" layer="25">V_OUT</text>
+<text x="48.895" y="88.265" size="1.778" layer="25">GND</text>
 </plain>
 <libraries>
 <library name="toshiba-td62083">
@@ -1418,6 +1420,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="20.82165" y="66.73215" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-L_COPPER" value="OSHW-LOGOL-COPPER" x="99.06" y="15.24" smashed="yes" rot="R90"/>
+<element name="J2" library="SparkFun-Connectors" package="1X02" value="" x="46.355" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="47.625" y="87.503" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="47.625" y="90.932" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1563,6 +1569,7 @@ design rules under a new name.</description>
 <vertex x="104.775" y="1.905"/>
 <vertex x="6.35" y="1.905"/>
 </polygon>
+<contactref element="J2" pad="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="Q1" pad="1"/>
@@ -1922,7 +1929,8 @@ design rules under a new name.</description>
 <wire x1="35.76955" y1="79.96555" x2="35.15995" y2="79.96555" width="0.6096" layer="1"/>
 <wire x1="35.15995" y1="79.96555" x2="32.04845" y2="83.07705" width="0.6096" layer="1"/>
 <wire x1="32.04845" y1="83.07705" x2="28.0035" y2="83.07705" width="0.6096" layer="1"/>
-<wire x1="28.0035" y1="83.07705" x2="24.892" y2="79.96555" width="0.6096" layer="1"/>
+<wire x1="28.0035" y1="83.07705" x2="27.390725" y2="82.464275" width="0.6096" layer="1"/>
+<wire x1="27.390725" y1="82.464275" x2="24.892" y2="79.96555" width="0.6096" layer="1"/>
 <wire x1="24.892" y1="79.96555" x2="24.892" y2="74.676" width="0.6096" layer="1"/>
 <wire x1="24.892" y1="74.676" x2="22.09165" y2="71.87565" width="0.6096" layer="1"/>
 <wire x1="22.09165" y1="71.87565" x2="22.09165" y2="68.76415" width="0.6096" layer="1"/>
@@ -1947,6 +1955,13 @@ design rules under a new name.</description>
 <wire x1="40.98835" y1="78.74" x2="40.98835" y2="77.7875" width="0.3048" layer="1"/>
 <wire x1="39.37" y1="79.96555" x2="39.37" y2="78.74" width="0.3048" layer="1"/>
 <wire x1="39.37" y1="78.74" x2="40.98835" y2="78.74" width="0.3048" layer="1"/>
+<contactref element="J2" pad="2"/>
+<wire x1="43.815" y1="88.9" x2="29.21" y2="88.9" width="0.3048" layer="1"/>
+<wire x1="29.21" y1="88.9" x2="26.67" y2="86.36" width="0.3048" layer="1"/>
+<via x="26.67" y="86.36" extent="1-16" drill="0.35"/>
+<wire x1="26.67" y1="86.36" x2="26.67" y2="83.185" width="0.3048" layer="16"/>
+<via x="26.67" y="83.185" extent="1-16" drill="0.35"/>
+<wire x1="26.67" y1="83.185" x2="27.390725" y2="82.464275" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$32">
 <contactref element="IC3" pad="10"/>

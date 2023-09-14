@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -7493,6 +7493,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C6" library="SparkFun-Capacitors" deviceset="9.0PF" device="-0603-50V-10%" value="1uf"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L-COPPER"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7888,6 +7889,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="-274.4978" y="82.2452" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="-242.2906" y="159.8676" smashed="yes"/>
+<instance part="J2" gate="G$1" x="-277.0378" y="127.4572" smashed="yes">
+<attribute name="VALUE" x="-279.5778" y="122.6312" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-279.5778" y="133.0452" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8304,6 +8309,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-238.1622" y1="22.085296875" x2="-228.940359375" y2="22.085296875" width="0.1524" layer="91"/>
 <junction x="-228.940359375" y="22.085296875"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="-269.4178" y1="127.4572" x2="-264.16" y2="127.4572" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="127.4572" x2="-264.16" y2="127" width="0.1524" layer="91"/>
+<label x="-264.16" y="127" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="SET" class="0">
 <segment>
@@ -8413,6 +8424,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-264.3378" y1="76.6572" x2="-264.3378" y2="71.247" width="0.1524" layer="91"/>
 <wire x1="-264.3378" y1="71.247" x2="-281.7114" y2="71.247" width="0.1524" layer="91"/>
 <label x="-281.8384" y="71.12" size="2.54" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="-269.4178" y1="129.9972" x2="-264.16" y2="129.9972" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="129.9972" x2="-264.16" y2="132.08" width="0.1524" layer="91"/>
+<label x="-264.16" y="132.08" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$32" class="0">

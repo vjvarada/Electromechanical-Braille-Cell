@@ -3426,7 +3426,6 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="9.0PF" device="-0603-50V-10%" value="0.1uF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="9.0PF" device="-0603-50V-10%" value="1uf"/>
-<part name="J2" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 </parts>
 <sheets>
@@ -3817,10 +3816,6 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <instance part="C6" gate="G$1" x="-205.32" y="-11.59" smashed="yes">
 <attribute name="NAME" x="-203.796" y="-8.669" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-203.796" y="-13.749" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="J2" gate="G$1" x="-275.7932" y="61.341" smashed="yes">
-<attribute name="VALUE" x="-278.3332" y="56.515" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-278.3332" y="66.929" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J3" gate="G$1" x="-276.987" y="76.962" smashed="yes">
 <attribute name="VALUE" x="-279.527" y="72.136" size="1.778" layer="96" font="vector"/>
@@ -4387,6 +4382,14 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="-10.16" x2="-73.66" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-10.16"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="5.5V"/>
+<wire x1="-241.3" y1="83.82" x2="-264.2108" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="-264.2108" y1="83.82" x2="-264.2108" y2="79.502" width="0.1524" layer="91"/>
+<wire x1="-264.2108" y1="79.502" x2="-269.367" y2="79.502" width="0.1524" layer="91"/>
+<label x="-264.0838" y="83.8708" size="2.54" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -5696,15 +5699,6 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <pinref part="U$9" gate="G$1" pin="RAW"/>
 <wire x1="-246.38" y1="76.2" x2="-241.3" y2="76.2" width="0.1524" layer="91"/>
 <label x="-243.3066" y="75.8698" size="2.54" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$90" class="0">
-<segment>
-<pinref part="U$9" gate="G$1" pin="5.5V"/>
-<wire x1="-241.3" y1="83.82" x2="-264.2108" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="-264.2108" y1="83.82" x2="-264.2108" y2="79.502" width="0.1524" layer="91"/>
-<wire x1="-264.2108" y1="79.502" x2="-269.367" y2="79.502" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
